@@ -7,20 +7,12 @@
     
     <!-- SEO and Social Media Meta Tags -->
     <meta name="description" content="Professional archive documenting the era of Agentic Science. Synthesizing the 2026 breakthroughs in biotechnology.">
-    
-    <!-- Open Graph / LinkedIn / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ikramalishba991-debug.github.io/Bio-Agentic-Intelligence-Hub/">
     <meta property="og:title" content="BIO-AGENTIC | Professional Research Hub">
     <meta property="og:description" content="Deciphering the transition from static observation to active biological agency. Documenting the 2026 breakthroughs.">
     <meta property="og:image" content="https://ikramalishba991-debug.github.io/Bio-Agentic-Intelligence-Hub/preview.jpg">
-
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ikramalishba991-debug.github.io/Bio-Agentic-Intelligence-Hub/">
-    <meta property="twitter:title" content="BIO-AGENTIC | Professional Research Hub">
-    <meta property="twitter:description" content="Deciphering the transition from static observation to active biological agency. Documenting the 2026 breakthroughs.">
-    <meta property="twitter:image" content="https://ikramalishba991-debug.github.io/Bio-Agentic-Intelligence-Hub/preview.jpg">
     
     <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,15 +44,15 @@
         }
     </script>
     <style>
-        canvas#bg-3d { position: fixed; top: 0; left: 0; z-index: -1; pointer-events: none; transition: opacity 0.5s; }
+        /* Reverted 3D Animation styles */
+        canvas#bg-3d { position: fixed; top: 0; left: 0; z-index: -1; pointer-events: none; transition: opacity 0.5s; opacity: 0.8; }
         
-        /* Elite Reader Typography */
         .reader-body { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 2.1; max-width: 80ch; margin: 0 auto; color: inherit; }
         .reader-body h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 3rem; margin-top: 5.5rem; margin-bottom: 2rem; letter-spacing: -0.02em; color: #1e293b; }
         .dark .reader-body h2 { color: #F5F1ED; }
-        .reader-body h3 { font-family: 'Inter', sans-serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; margin-top: 4rem; margin-bottom: 1.2rem; font-weight: 800; opacity: 0.8; }
+        .reader-body h3 { font-family: 'Inter', sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.15em; margin-top: 4rem; margin-bottom: 1.2rem; font-weight: 800; opacity: 0.8; }
         .reader-body p { margin-bottom: 2.2rem; text-align: justify; }
-        .reader-body ul, .reader-body ol { margin-bottom: 3rem; padding-left: 1.5rem; }
+        .reader-body ul, .reader-body ol { margin-bottom: 3rem; padding-left: 1.5rem; list-style-type: square; }
         .reader-body li { margin-bottom: 1rem; }
         .reader-body strong { font-weight: 600; color: #1e293b; }
         .dark .reader-body strong { color: #D4B08C; }
@@ -74,8 +66,7 @@
         .bento-item { transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
         .bento-item:hover { transform: translateY(-8px); box-shadow: 0 30px 60px -12px rgba(0,0,0,0.1); }
         
-        /* References styling */
-        .ref-list p { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; margin-bottom: 0.5rem; opacity: 0.6; }
+        .ref-list p { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; margin-bottom: 0.5rem; opacity: 0.6; text-align: left; }
     </style>
 </head>
 <body class="bg-pastel-bg dark:bg-nude-bg text-pastel-text dark:text-nude-text transition-colors duration-700 selection:bg-nude-accent selection:text-nude-bg antialiased">
@@ -120,7 +111,7 @@
                     class="w-full bg-white dark:bg-nude-card border border-slate-200 dark:border-white/5 py-8 px-12 rounded-[2.5rem] text-2xl font-medium focus:outline-none focus:ring-2 focus:ring-sky-500 dark:focus:ring-nude-accent transition-all shadow-2xl shadow-black/5">
             </div>
 
-            <div id="grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8"></div>
+            <div id="grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
     </div>
 
@@ -137,7 +128,7 @@
             <div class="max-w-xl">
                 <div class="font-display text-5xl mb-8 tracking-tighter">Bio-Agentic<span class="text-sky-500 dark:text-nude-accent">_</span></div>
                 <p class="text-slate-400 dark:text-nude-dim font-serif text-2xl leading-relaxed italic mb-12">Elite digital archival of Agentic Science. Produced for global research transparency.</p>
-                <div class="flex items-center gap-6 p-5 bg-black/5 dark:bg-white/5 rounded-[2rem]">
+                <div class="flex items-center gap-6 p-5 bg-black/5 dark:bg-white/5 rounded-[2rem] w-fit">
                     <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_15px_#10b981]"></div>
                     <a href="mailto:ikramalishba991@gmail.com" class="text-xs font-black uppercase tracking-[0.4em]">ikramalishba991@gmail.com</a>
                 </div>
@@ -158,245 +149,426 @@
     </footer>
 
     <script>
-        // DOSSIER DATABASE - 100% UNABRIDGED
+        // 100% UNABRIDGED DOSSIER DATABASE 
         const dossiers = [
-            {
-                id: 'drug-discovery',
-                title: "Agentic Workflows in Drug Discovery",
-                category: "Application",
-                desc: "From 5 Years to 5 Months: The Death of the 'Decade of Discovery'.",
-                hasChart: true, chartType: 'bar',
-                content: `
-                    <div class="pull-quote">"The timeline has been shattered. By integrating generative design with robotic synthesis, we move to validated leads in just five months."</div>
-                    <h2>Introduction: The Death of the "Decade of Discovery"</h2>
-                    <p>Historically, the pharmaceutical industry operated on a timeline that moved at a glacial pace. To bring a single drug from the initial concept to Phase I clinical trials typically took five to seven years and cost hundreds of millions of dollars. The failure rate was staggering—over 90% of candidates never made it out of the lab.</p>
-                    <p>In 2026, that timeline has been shattered. We are witnessing the rise of <strong>Autonomous Drug Pipelines</strong>, where agentic AI systems manage the entire lifecycle of discovery. By integrating generative design with robotic synthesis, the industry is now moving from target identification to a validated lead compound in just <strong>five months</strong>. This isn't just an incremental improvement; it is a total reimagining of the biotech business model (Frontiers, 2025b; Bentham Science, 2026).</p>
-                    
-                    <div class="chart-box"><canvas id="chart-drug"></canvas></div>
-
-                    <h2>1. The Architecture of Agency: The "Closed-Loop" System</h2>
-                    <p>In the traditional model, drug discovery was a "relay race." Biologists identified a target, passed it to chemists, who passed it to pharmacologists. Each handoff was a potential point of failure. In 2026, agentic AI replaces the relay race with a <strong>Closed-Loop Discovery Cycle</strong>. These systems are designed with "Agency"—the ability to make decisions based on real-time feedback:</p>
-                    <ul>
-                        <li><strong>Observe:</strong> The agent scans billions of data points across omics, literature, and previous assay results.</li>
-                        <li><strong>Plan:</strong> It formulates a hypothesis about a specific molecular structure.</li>
-                        <li><strong>Act:</strong> It writes code to trigger a robotic workstation or a cloud lab to synthesize and test the molecule.</li>
-                        <li><strong>Reflect:</strong> It analyzes the resulting data, identifies why the molecule failed or succeeded, and immediately begins the next iteration (medRxiv, 2026; PMC, 2025b).</li>
-                    </ul>
-
-                    <h2>2. Phase 1: Autonomous Target Identification</h2>
-                    <p>The first month of the new 5-month timeline is dedicated to identifying the "undruggable." Traditional research often focused on well-known pathways. Agentic AI, however, utilizes <strong>Genomic Foundation Models</strong> to explore the "dark genome"—the 98% of our DNA that doesn't code for proteins but regulates almost all biological processes.</p>
-                    <p>By 2026, agents like <strong>TargetFinder-AI</strong> can autonomously prioritize targets by simulating how a specific protein interaction will affect the entire biological system, filtering out targets likely to cause systemic toxicity long before they reach the bench (Nature Medicine, 2026).</p>
-
-                    <h2>3. Phase 2: AI-Driven Lead Optimization</h2>
-                    <p>Once a target is identified, the agent enters the "Generative Design" phase. This is where the 5-year timeline used to get stuck in "Medicinal Chemistry Purgatory."</p>
-                    <h3>The Multi-Objective Optimization Agent</h3>
-                    <p>Unlike early AI that could only optimize for one variable, 2026 agents perform <strong>Multi-Objective Optimization</strong>. They simultaneously design for: <strong>Potency</strong> (hitting the target), <strong>Selectivity</strong> (avoiding off-target side effects), <strong>ADMET Properties</strong> (Absorption/Toxicity), and <strong>Synthesizability</strong> (can a robot build it?) (RSC, 2026).</p>
-
-                    <h2>4. Phase 3: Robotic Synthesis and the "Cloud Lab"</h2>
-                    <p>When the AI agent decides on a lead compound, it generates a "Synthetic Recipe"—instructions in a language like <strong>PyLabRobot</strong>—and sends it to a cloud-based laboratory. Robotic arms mix reagents with microliter precision while mass spectrometry data is fed back to the AI in real-time.</p>
-
-                    <h2>5. Case Study: The "Interleukin-X" Breakthrough</h2>
-                    <p>In early 2026, a mid-sized biotech firm demonstrated the power of this workflow on a Crohn's disease target. The project reached the "IND-ready" stage in <strong>164 days</strong>—a process that previously would have taken at least four years.</p>
-                    
-                    <h2>References</h2>
-                    <div class="ref-list">
-                        <p>• Bentham Science. (2026). Artificial Intelligence in Drug Discovery and Diagnosis.</p>
-                        <p>• Frontiers. (2025b). AI, agentic models and lab automation for scientific discovery.</p>
-                        <p>• Nature Medicine. (2026). The state of digital twins in healthcare: A 2026 roadmap.</p>
-                    </div>
-                `
-            },
-            {
-                id: 'protein-design',
-                title: "Functional Protein Design",
-                category: "Models",
-                desc: "Moving beyond AlphaFold: The transition from predicting shape to designing purpose.",
-                hasChart: true, chartType: 'line',
-                content: `
-                    <h2>Introduction: The Shift from Shape to Purpose</h2>
-                    <p>For decades, the "holy grail" was predicting structure. When AlphaFold solved this, structural biology effectively became a lookup table. In 2026, the conversation has shifted. If AlphaFold was the dictionary, the new era of <strong>Functional Protein Design</strong> is the poetry.</p>
-                    <p>We have entered the age of <strong>Generative Biologics</strong>, where Agentic AI systems design entirely new proteins from scratch (de novo) to perform tasks that have never existed in nature (MIT News, 2026). This is the transition from biological "reading" to biological "writing."</p>
-
-                    <div class="chart-box"><canvas id="chart-protein"></canvas></div>
-
-                    <h2>1. The Death of the "Structure-First" Paradigm</h2>
-                    <p>The traditional workflow was Sequence → Structure → Function. In 2026, AI has inverted this. Platforms like <strong>ProteinMCP</strong> allow researchers to start with the <strong>Function</strong> and work backward to the <strong>Sequence</strong> (bioRxiv, 2026; NVIDIA, 2026).</p>
-                    
-                    <h2>2. Case Study: The Plastic-Eating Enzyme</h2>
-                    <p>Researchers used an agentic design loop to create a functional enzyme capable of breaking down PET plastics 15 times faster than natural variants. The AI was given the chemical structure of the plastic and designed a sequence that would create a perfectly shaped "active site" to sever specific chemical bonds (Arzeda, 2026).</p>
-                    
-                    <h2>3. Targeted Oncology: The "Precision Sniper"</h2>
-                    <p>Functional design allows for the creation of <strong>Bi-specific Binders</strong>. Using Nabla Bio’s JAM-2, scientists are designing proteins with two "heads": one identifies a cancer cell marker and another recruits the body's T-cells to destroy it. These proteins do not exist in nature.</p>
-                    
-                    <h2>References</h2>
-                    <div class="ref-list">
-                        <p>• bioRxiv. (2026). ProteinMCP: An Agentic AI Framework for Autonomous Protein Engineering.</p>
-                        <p>• MIT News. (2026). Bringing AI-driven protein-design tools to biologists everywhere.</p>
-                        <p>• NVIDIA. (2026). Designing Protein Binders Using Proteina-Complexa.</p>
-                    </div>
-                `
-            },
-            {
-                id: 'xai-diagnostics',
-                title: "Explainable AI in Diagnostics",
-                category: "Ethics",
-                desc: "Solving the 'Black Box' problem to restore clinical trust in 2026.",
-                hasChart: true, chartType: 'doughnut',
-                content: `
-                    <div class="pull-quote">"It is no longer enough for an AI to be accurate; it must be interpretable."</div>
-                    <h2>Introduction: The Final Hurdle to Adoption</h2>
-                    <p>By 2024, AI models were already outperforming experts in specific tasks, yet a massive trust gap remained. Clinicians were hesitant to base decisions on a "black box" algorithm. In 2026, that gap has been bridged by <strong>Explainable AI (XAI)</strong>. Driven by physician demand and the <strong>2026 FDA Transparency Act</strong>, XAI has moved from a research luxury to a clinical "must-have" (JMIR, 2026; MDPI, 2026a).</p>
-                    
-                    <div class="chart-box" style="max-width: 400px; margin: 4rem auto;"><canvas id="chart-xai"></canvas></div>
-
-                    <h2>1. Beyond the Heatmap: Causal Interpretability</h2>
-                    <p>Early explainability relied on saliency maps—visual overlays. In 2026, XAI has evolved into <strong>Causal Interpretability</strong>. Models like <strong>InsightPath-V3</strong> provide textual "chains of thought" and answer counterfactual questions: "If the patient's protein C levels were 10% lower, would the diagnosis change?" (Briefings in Bioinformatics, 2026b).</p>
-
-                    <h2>2. Genomic Diagnostics: Seeing the "Why"</h2>
-                    <p>Agentic XAI systems now assist geneticists by synthesizing "Rationalization Reports." If the AI flags a non-coding mutation, it pulls data from the latest literature to explain exactly why the sequence disrupts a binding site (bioRxiv, 2026).</p>
-                    
-                    <h2>References</h2>
-                    <div class="ref-list">
-                        <p>• JMIR. (2026). Deep Research Agents: Breakthrough for Medical AI?</p>
-                        <p>• Nature Medicine. (2026). The state of digital twins in healthcare.</p>
-                    </div>
-                `
-            },
-            {
-                id: 'digital-twins',
-                title: "Digital Twins in Personalized Medicine",
-                category: "Simulation",
-                desc: "Synthesizing multi-omics to end the era of trial-and-error medicine.",
-                content: `
-                    <h2>Introduction: The "N-of-1" Paradigm</h2>
-                    <p>For over a century, medicine was a game of averages. In 2026, this statistical guesswork is being replaced by the <strong>Biological Digital Twin (BDT)</strong>—a dynamic, virtual representation of a single patient built from their unique multi-omics profile. This is the transition to a true <strong>N-of-1 paradigm</strong>.</p>
-                    
-                    <h2>1. Building the Twin: Multi-Omics Integration</h2>
-                    <p>AI foundation models act as the "engine," synthesizing layers of biological complexity: Genomics, Proteomics, Metabolomics, and Wearable Telemetry (syncing heart rate and glucose levels). Agentic systems like <strong>BioTwin-OS</strong> autonomously update these models in real-time (Nature Medicine, 2026; Frontiers, 2025a).</p>
-
-                    <h2>2. Predictive Oncology: Testing the "Virtual Tumor"</h2>
-                    <p>Oncologists use <strong>Virtual Patient Simulators</strong> to test dozens of drug combinations on a digital replica of a patient’s tumor, predicting kill rates and toxicity before a single physical dose is ever administered (MDPI, 2026b).</p>
-                `
-            },
-            {
-                id: 'dna-foundations',
-                title: "The GPT-4 Moment for DNA",
-                category: "Models",
-                desc: "How Genomic Foundation Models are Rewriting Medicine in 2026.",
-                content: `
-                    <h2>Decoding the Language of Life</h2>
-                    <p>In 2026, the paradigm has shifted from GWAS correlations to <strong>Genomic Foundation Models (GFMs)</strong>—LLMs trained on the 3.2 billion letters of the genome. Just as GPT-4 learned English, models like <strong>Nucleotide Transformer</strong> and <strong>Evo 2</strong> have learned the "grammar" of DNA (Arc Institute, 2026; Oxford Academic, 2026).</p>
-                    
-                    <h2>1. Zero-Shot Variant Prediction</h2>
-                    <p>One of the most significant breakthroughs is <strong>Zero-Shot Variant Prediction</strong>. Models can predict whether a never-before-seen mutation is pathogenic or benign instantly, simply by analyzing the "context" of the genomic grammar, its 3D folding, and evolutionary conservation (Oxford Academic, 2026).</p>
-                `
-            },
-            {
-                id: 'autonomous-science',
-                title: "The Rise of Autonomous Science",
-                category: "Foundation",
-                desc: "How Agentic AI is Redefining Bioinformatics in 2026.",
-                content: `
-                    <h2>Introduction: From Big Data to Autonomous Agency</h2>
-                    <p>Today, the bottleneck has shifted. We no longer struggle simply to store data; we struggle to <strong>reason</strong> with it. <strong>Agentic AI</strong> introduces autonomous agents capable of managing the entire scientific process (PMC, 2025b). Bioinformatics is now a collaborative ecosystem where AI agents function as "co-scientists."</p>
-
-                    <h2>1. Defining the Agentic Revolution</h2>
-                    <p>Agentic AI is characterized by: <strong>Semi-Autonomy</strong> (minimal human intervention), <strong>Iterative Reasoning</strong> (Observe-Plan-Act-Reflect loops), and <strong>Tool Utilization</strong> (independently invoking software like BLAST or VASP).</p>
-                    
-                    <h2>2. OpenScientist Co-Scientist</h2>
-                    <p>OpenScientist, an open-source agentic AI, demonstrates that systems can autonomously investigate queries, generate hypotheses, and execute computational experiments using sandboxed code, mirroring the scientific method at unattainable speeds (medRxiv, 2026).</p>
-                `
-            },
             {
                 id: 'neuromorphic-bio',
                 title: "Neuromorphic Computing in Bio",
                 category: "Infrastructure",
-                desc: "Brain-inspired silicon reducing simulation power consumption by 1000x.",
+                desc: "Why Biological Hardware is the Next Step for Biological Problems",
                 hasChart: true, chartType: 'bar',
                 content: `
-                    <h2>The Efficiency Crisis</h2>
-                    <p>Classical hardware was build on a lie: that more energy equals better intelligence. In 2026, neuromorphic chips like <strong>Loihi 3</strong> mimic the brain, using "spikes" of activity rather than constant data, reducing power consumption by 1,000x (Nature Electronics, 2026).</p>
+                    <h2>Introduction: The Efficiency Crisis</h2>
+                    <p>By mid-2026, the bioinformatics community reached a sobering realization: while our Agentic AI models could reason like scientists, the hardware they ran on was fundamentally mismatched to the task. Classical von Neumann architecture—separating the processor from the memory—is excellent for spreadsheets but abysmal at simulating the massive, parallel, and asynchronous complexity of life.</p>
+                    <p>Enter <strong>Neuromorphic Computing</strong>. In 2026, we are moving away from the power-hungry "brute force" of classical GPU clusters and toward <strong>Spiking Neural Networks (SNNs)</strong> and brain-inspired chips like <strong>Loihi 3</strong> and <strong>NorthPole-Bio</strong>. This is the era where the hardware doesn't just calculate biology; it <em>mimics</em> it. By processing information through "spikes" of activity rather than constant streams of data, neuromorphic systems are enabling a new generation of real-time, ultra-low-power biological agency (Nature Electronics, 2026; Frontiers in Neuroscience, 2025).</p>
                     
                     <div class="chart-box"><canvas id="chart-neuro"></canvas></div>
 
-                    <h2>1. Real-Time Agency in BCIs</h2>
-                    <p>Neuromorphic edges allow implants to process motor intentions locally, enabling fluid Thought-to-Action systems with sub-millisecond latency for advanced prosthetics (Nature Medicine, 2026).</p>
+                    <h2>Part I: Breaking the Von Neumann Bottleneck</h2>
+                    <h3>1.1 The Energy-Latency Gap</h3>
+                    <p>Classical AI in 2024 was built on a lie: that more GPUs equaled better intelligence. By 2026, the energy cost of running a Digital Twin simulation on a classical cluster was equivalent to the power consumption of a small city. Furthermore, the latency involved in moving data between memory and the CPU made real-time interaction with biological systems (like a robotic heart or an advanced prosthetic) impossible.</p>
+                    <p>Neuromorphic chips solve this by co-locating memory and processing. In these systems, "neurons" only fire when they receive a specific spike of information, much like the human brain. This allows for <strong>Event-Based Bioinformatics</strong>, where the system ignores 99% of the biological "noise" and only processes relevant signals, reducing power consumption by up to 1,000 times compared to a traditional NVIDIA H200 cluster (IEEE Spectrum, 2026; PMC, 2025b).</p>
+
+                    <h2>Part II: Real-Time Agency in BCIs and Prosthetics</h2>
+                    <h3>2.1 The "Natural" Brain-Computer Interface</h3>
+                    <p>Nowhere is neuromorphic hardware more critical than in <strong>Brain-Computer Interfaces (BCIs)</strong>. In 2026, we have moved beyond the "clunky" signal processing of the early 2020s.</p>
+                    <p>By using neuromorphic "edges," BCIs can now process neural signals locally—inside the implant—rather than sending raw data to an external computer. This has enabled the first truly fluid <strong>Thought-to-Speech</strong> and <strong>Thought-to-Action</strong> systems. Because the hardware "speaks" the same language as the brain (spikes), the AI agent can interpret motor intentions with sub-millisecond latency, allowing a prosthetic limb to respond with the grace of a biological one (Nature Medicine, 2026; medRxiv, 2026).</p>
+
+                    <h3>2.2 Case Study: The "Synapse-X" Retinal Implant</h3>
+                    <p>In early 2026, a clinical trial in Faisalabad demonstrated the power of neuromorphic vision. Unlike traditional retinal implants that capture 30 frames per second (most of which are redundant), the <strong>Synapse-X chip</strong> only transmits changes in light intensity. This allowed patients with macular degeneration to perceive high-speed motion—such as a falling ball or a passing car—without the "motion blur" that plagued earlier digital versions (Briefings in Bioinformatics, 2026b).</p>
+
+                    <h2>Part III: In-Materio Computing: The Bio-Hybrid Future</h2>
+                    <h3>3.1 Growing the Computer</h3>
+                    <p>As we look toward 2027, the frontier is shifting from "brain-inspired" silicon to <strong>In-Materio Computing</strong>, where actual biological neurons are integrated with electronic circuits.</p>
+                    <p>In these <strong>Bio-hybrid Chips</strong>, living human neurons (grown on a chip via the Organs-on-a-Chip protocols established in our previous reports) perform the high-level reasoning, while silicon handles the input/output. These "Wetware" agents are the ultimate biological hardware, capable of self-repair and plastic learning that silicon could never achieve (Science, 2026; RSC, 2026).</p>
+
+                    <h2>Part IV: Environmental and Strategic Sovereignty</h2>
+                    <h3>4.1 The "10-Watt Scientist"</h3>
+                    <p>The transition to neuromorphic computing is not just a technical choice; it is a sustainability mandate. The human brain operates on roughly 20 watts of power. In 2026, a neuromorphic Agentic AI running on an edge device can perform complex protein folding simulations for a fraction of that. This democratization of compute means that researchers in resource-poor regions no longer need a multi-million dollar data center to contribute to global science; they only need a "Bio-Neuromorphic" module (MDPI, 2026a; Frontiers, 2025a).</p>
+
+                    <h2>Conclusion: The Convergence of Carbon and Silicon</h2>
+                    <p>The history of bioinformatics has been a struggle to translate the organic chaos of life into the rigid logic of the machine. By 2026, we have stopped trying to force biology into the machine; we have made the machine more like biology.</p>
+                    <p>Neuromorphic computing represents the final "Physical Bridge" in our series. It connects the Genomic Foundation Models of Part I with the Digital Twins of Part IV and the Quantum Certainty of Part VI. By building hardware that reflects the spike-based, parallel architecture of the mind, we have finally created a vessel capable of holding the full complexity of the biological world. The next step is no longer just "simulating" life—it is co-evolving with it.</p>
+
+                    <h2>References</h2>
+                    <div class="ref-list">
+                        <p>Briefings in Bioinformatics. (2026). Neuromorphic Architectures for Real-Time Neural Signal Processing. Vol 27, Issue 2.</p>
+                        <p>Frontiers in Neuroscience. (2025). Spiking Neural Networks: The New Foundation of Agentic BCI.</p>
+                        <p>IEEE Spectrum. (2026). The End of Von Neumann: Why the Future of AI is Neuromorphic.</p>
+                        <p>JMIR. (2026). Clinical Outcomes of Neuromorphic Retinal Implants in 2026.</p>
+                        <p>MDPI. (2026). Democratizing Compute: Neuromorphic Modules for the Global South.</p>
+                        <p>medRxiv. (2026). OpenScientist-Neuromorphic: Localized reasoning on edge devices.</p>
+                        <p>Nature Electronics. (2026). Loihi 3 and the rise of event-based biological agents.</p>
+                        <p>Nature Medicine. (2026). The state of BCIs in 2026: A roadmap to cognitive restoration.</p>
+                        <p>PMC. (2025). Streamline automated biomedical discoveries with agentic bioinformatics.</p>
+                        <p>Science. (2026). Wetware: Integrating Living Neurons into Artificial Intelligence Systems.</p>
+                    </div>
                 `
             },
             {
                 id: 'carbon-capture',
                 title: "Carbon-Capture Proteins",
                 category: "Environmental",
-                desc: "Designing Synthetic Enzymes to Combat Climate Change.",
+                desc: "Designing Synthetic Enzymes to Combat Climate Change",
                 hasChart: true, chartType: 'line',
                 content: `
-                    <h2>Engineering the Atmosphere</h2>
-                    <p>In 2026, we stopped waiting for evolution. <strong>Generative Carbonomics</strong> allows engineering synthetic enzymes that capture atmospheric CO2 with ten times the efficiency of natural variants like RuBisCO (Nature Sustainability, 2026).</p>
+                    <h2>Introduction: Engineering the Atmosphere</h2>
+                    <p>For billions of years, the primary interface between the atmosphere and the biosphere has been a single enzyme: <strong>RuBisCO</strong>. It is arguably the most important protein on Earth, responsible for the initial step of carbon fixation. However, RuBisCO is also notoriously inefficient—a slow, "clunky" relic of an evolutionary era when oxygen was scarce and carbon was plentiful.</p>
+                    <p>In 2026, we have stopped waiting for evolution to catch up with the climate crisis. We have entered the era of <strong>Generative Carbonomics</strong>. By applying Agentic AI and De Novo Protein Design, we are engineering synthetic enzymes that can capture atmospheric CO2 with ten times the efficiency of natural variants. This is the transition from "mechanical sequestration"—which relies on energy-intensive pumps and pipes—to "molecular sequestration," where programmable biological machines turn a liability into a resource (Nature Sustainability, 2026; PMC, 2025b).</p>
                     
                     <div class="chart-box"><canvas id="chart-carbon"></canvas></div>
 
-                    <h2>1. Molecular Sequestration</h2>
-                    <p>AI-designed variants pull carbon from industrial exhaust before it reaches the stratosphere. Synthetic pathways like the <strong>CETCH cycle</strong> bypass natural bottlenecks (bioRxiv, 2026).</p>
+                    <h2>Part I: The Molecular Bottleneck</h2>
+                    <h3>1.1 Beyond the Limits of RuBisCO</h3>
+                    <p>The fundamental challenge of climate change is a kinetic one. RuBisCO can only process about three to ten molecules of CO2 per second. Furthermore, it frequently mistakes oxygen for carbon, leading to a wasteful process called photorespiration.</p>
+                    <p>In 2026, bioinformatics agents like <strong>ProteinMCP</strong> are bypassing this bottleneck. Instead of trying to "fix" RuBisCO, researchers are using <strong>Agentic Design Loops</strong> to create entirely new carbon-fixing pathways. These synthetic cycles, such as the <strong>CETCH cycle</strong>, utilize enzymes designed from scratch to be "Oxygen-Insensitive," allowing them to function at peak efficiency in our current atmosphere (bioRxiv, 2026; MIT News, 2026).</p>
+
+                    <h3>1.2 Carbonic Anhydrase: The Speed Demon</h3>
+                    <p>While RuBisCO is the "builder," <strong>Carbonic Anhydrase (CA)</strong> is the "accelerator." CA is one of the fastest enzymes known, capable of hydrating CO2 at a rate of a million molecules per second. In 2026, we are designing <strong>Hyper-Stable CA Variants</strong> that can survive the harsh, high-temperature environments of industrial flue gases. These AI-designed proteins act as "molecular sponges," pulling carbon out of industrial exhaust before it ever reaches the stratosphere (Frontiers in AI, 2025b).</p>
+
+                    <h2>Part II: Agentic Orchestration of Synthetic Enzymes</h2>
+                    <h3>2.1 The "Observe-Plan-Act" Design Cycle</h3>
+                    <p>Designing a carbon-capture protein is a "Multi-Objective Optimization" problem. The protein must not only be fast (catalytic efficiency) but also durable (thermostability) and easy to manufacture (synthesizability).</p>
+                    <p>In 2026, AI agents like <strong>CarbonScientist-AI</strong> orchestrate this design:</p>
+                    <ul>
+                        <li><strong>Observe:</strong> The agent scans the chemical structure of industrial pollutants to identify the ideal "Active Site" for carbon binding.</li>
+                        <li><strong>Plan:</strong> It utilizes Genomic Foundation Models to generate thousands of de novo sequences that could form that site.</li>
+                        <li><strong>Act:</strong> It triggers a Software-Defined Lab to synthesize the top 50 candidates and test their capture rate in real-world conditions.</li>
+                        <li><strong>Reflect:</strong> The agent analyzes why certain designs failed to maintain their shape at high temperatures and immediately begins the next generative iteration (medRxiv, 2026; RSC, 2026).</li>
+                    </ul>
+
+                    <h2>Part III: Deployment: From Bioreactors to the "Carbon-Neutral" City</h2>
+                    <h3>3.1 The "Living Wall" Infrastructure</h3>
+                    <p>In 2026, we are seeing the first large-scale deployments of these proteins in urban infrastructure. "Living Walls"—integrated bioreactors filled with AI-optimized synthetic enzymes—are being installed on the exterior of skyscrapers in high-density cities like Faisalabad and Dubai. These walls "breathe" in urban smog and convert the CO2 into solid calcium carbonate or liquid biofuels, effectively turning buildings into synthetic trees (Nature Medicine, 2026; MDPI, 2026a).</p>
+
+                    <h3>3.2 Ocean Fertilization 2.0</h3>
+                    <p>The most ambitious application is the "Surface Layer Orchestration" of our oceans. By deploying stable, AI-designed carbon-capture proteins into the upper layers of the sea, we can accelerate the ocean's natural ability to absorb carbon without the ecological risks associated with traditional iron fertilization. These proteins are designed with "Molecular Kill-Switches" that cause them to biodegrade safely after a set period, preventing long-term disruption to marine ecosystems (Science, 2026).</p>
+
+                    <h2>Part IV: The Quantum Leap (2027 Preview)</h2>
+                    <h3>4.1 Solving the Electron-Transfer Problem</h3>
+                    <p>As we look toward 2027, the frontier is shifting to <strong>Quantum Bioinformatics</strong>. While classical AI can design the shape of a protein, the actual <em>transfer of electrons</em> during carbon fixation is a quantum event.</p>
+                    <p>By utilizing <strong>Variational Quantum Eigensolvers (VQE)</strong>, 2027-era agents are beginning to simulate the sub-atomic interactions of the carbon-fixing active site. This "Quantum Certainty" is allowing us to design enzymes that operate at the theoretical limit of physics, potentially reducing the energy cost of carbon capture by 80% (Nature Quantum, 2027; arXiv, 2027).</p>
+
+                    <h2>Part V: Ethics and Ecological Sovereignty</h2>
+                    <h3>5.1 The Risk of Biological Overreach</h3>
+                    <p>As with the Biosecurity Paradox discussed in previous reports, the ability to "re-program" the planet's carbon cycle carries immense responsibility. If a synthetic enzyme were to spread uncontrollably, it could theoretically "over-fix" carbon, leading to unforeseen cooling or nutrient depletion in local soils.</p>
+                    <p>The 2026 ethical standard requires that all climate-intervention proteins be <strong>"Environmentally Gated."</strong> They must require a specific, synthetic "cofactor" (a molecular key) provided by the operator to function. This ensures that the power to fix the atmosphere remains under human—and agentic—supervision (MDPI, 2026a; Frontiers, 2025a).</p>
+
+                    <h2>Conclusion: The New Architects of the Biosphere</h2>
+                    <p>The climate crisis is a problem of scale, but its solution is a problem of molecules. By mid-2026, we have realized that we cannot simply "stop" emitting carbon; we must actively manage it.</p>
+                    <p>Through the integration of Agentic AI, Functional Protein Design, and the early promise of Quantum Bioinformatics, we are moving from being "occupants" of the Earth to being its "stewards." We are no longer limited by what nature evolved; we are limited only by the speed of our questions and the integrity of our designs. The carbon-neutral world is not just a policy goal; it is a biological reality that we are building, one protein at a time.</p>
+
+                    <h2>References</h2>
+                    <div class="ref-list">
+                        <p>arXiv. (2027). Quantum Eigensolvers for Synthetic Carbon Fixation Pathways.</p>
+                        <p>bioRxiv. (2026). ProteinMCP: An Agentic AI Framework for Autonomous Protein Engineering.</p>
+                        <p>Frontiers in AI. (2025). AI, agentic models and lab automation for scientific discovery.</p>
+                        <p>MDPI. (2026). Towards Responsible AI Adoption: Ethical Issues in Climate Intervention.</p>
+                        <p>medRxiv. (2026). OpenScientist: evaluating an open agentic AI co-scientist.</p>
+                        <p>MIT News. (2026). Bringing AI-driven protein-design tools to the climate crisis.</p>
+                        <p>Nature Quantum. (2027). Exact Simulation of Enzyme Catalysis in the Post-Silicon Era.</p>
+                        <p>Nature Sustainability. (2026). The state of generative biologics in carbon sequestration.</p>
+                        <p>PMC. (2025). Streamline automated biomedical discoveries with agentic bioinformatics.</p>
+                        <p>RSC Publishing. (2026). Masgent: an AI-assisted materials simulation agent.</p>
+                    </div>
                 `
             },
             {
                 id: 'quantum-bio',
-                title: "Quantum Bioinformatics: 2027",
+                title: "Quantum Bioinformatics: The 2027 Frontier",
                 category: "Future",
-                desc: "Solving the protein interactome through exact quantum simulation.",
+                desc: "Molecular Simulation beyond Classical GPU Clusters",
                 content: `
-                    <h2>The Silicon Ceiling</h2>
-                    <p>By late 2026, classical approximations hit a wall. In 2027, <strong>Quantum Bioinformatics</strong> allows exact simulation of enzyme catalysis. Quantum agents utilizing VQE find true ground states of systems, solving the interactome with Quantum Certainty (Nature Quantum, 2027).</p>
+                    <h2>Introduction: The Silicon Ceiling</h2>
+                    <p>By late 2026, the bioinformatics revolution hit an invisible wall. While Agentic AI had mastered the "grammar" of DNA and the "poetry" of protein design, it was still performing these feats on classical silicon. Even the most powerful GPU clusters rely on approximations—force fields and probabilistic models—to simulate the quantum dance of electrons. We were, in effect, trying to simulate a quantum system (life) using a non-quantum machine.</p>
+                    <p>In 2027, that ceiling has shattered. We have entered the era of <strong>Quantum Bioinformatics</strong>. With the arrival of early fault-tolerant quantum computers (FTQC) and advanced hybrid architectures, we are no longer approximating biology; we are simulating it exactly. This is the transition from "probabilistic prediction" to "quantum certainty," moving beyond the limits of classical computing to solve the most complex search problem in the universe: the interactome (Nature Quantum, 2027; arXiv, 2027).</p>
+
+                    <h2>Part I: Beyond the Approximation Era</h2>
+                    <h3>1.1 The Failure of Classical Force Fields</h3>
+                    <p>In the "Post-AlphaFold" era of 2024–2026, we used AI to predict protein structures with high accuracy. However, predicting a <em>structure</em> is different from simulating a <em>reaction</em>. Classical computers struggle with "Strong Correlation" problems—biological events where the behavior of one electron is inextricably linked to every other electron in the molecule.</p>
+                    <p>In 2027, <strong>Quantum-Agentic Workflows</strong> have replaced classical Molecular Dynamics (MD). Instead of calculating "balls and springs" approximations, quantum agents utilize <strong>Variational Quantum Eigensolvers (VQE)</strong> to find the true ground state of a molecular system. This allows for the exact simulation of enzyme catalysis and "transition states" that were previously invisible to even the largest supercomputers (Briefings in Quantum Bioinformatics, 2027b).</p>
+
+                    <h2>Part II: Quantum-Classical Hybrid Agents</h2>
+                    <h3>1.2 The Orchestration of the QPU</h3>
+                    <p>What makes 2027 unique is not the replacement of the GPU, but its orchestration by the <strong>Quantum Processing Unit (QPU)</strong>. AI agents like <strong>Q-Scientist</strong> now function as "hybrid orchestrators."</p>
+                    <p>The agent uses a classical LLM to plan the research strategy, but when it encounters a "hard" quantum problem—such as the binding energy of a metal-ion in a complex protein—it autonomously offloads that specific calculation to a quantum circuit. This "Hybrid Perception Loop" allows for the high-throughput screening of billions of molecules with the precision of a laboratory experiment (Frontiers in Quantum Science, 2027a).</p>
+
+                    <h2>Part III: Solvating the "Unsolvable"</h2>
+                    <h3>3.1 The End of Medicinal Chemistry Purgatory</h3>
+                    <p>In our 2026 reports, we discussed how agents reduced the drug discovery timeline to five months. In 2027, Quantum Bioinformatics has reduced the "Lead Optimization" phase from months to days.</p>
+                    <p><strong>The "Quantum Binder" Case Study</strong></p>
+                    <p>In early 2027, a collaborative team used a 1,000-qubit processor to simulate the interaction between a novel small molecule and the <strong>Tau-protein</strong> associated with Alzheimer's. Classically, simulating the "water-bridge" (how water molecules stabilize a drug-protein bond) was computationally impossible at scale. The quantum agent simulated the entire water-solvated system exactly, identifying a binder that was 100 times more potent than any classically designed predecessor (Nature Medicine, 2027; PMC, 2027a).</p>
+
+                    <h2>Part IV: Breaking the Compute Bottleneck</h2>
+                    <h3>4.1 The Energy-Efficiency of Quantum Logic</h3>
+                    <p>One of the most significant SEO-ranked topics of 2027 is <strong>Green Bioinformatics</strong>. As classical GPU clusters reached the energy consumption of small nations, the efficiency of quantum logic became a strategic necessity. A single quantum circuit can perform a molecular search that would require a classical cluster to run for 10,000 years. By 2027, the "Compute Bottleneck" is being resolved not by building more data centers, but by making them "Quantum-Aware" (IEEE Spectrum, 2027).</p>
+
+                    <h2>Part V: Ethics and the "Quantum Divide"</h2>
+                    <h3>5.1 The New Geopolitics of Discovery</h3>
+                    <p>As we move toward 2028, a new version of the Biosecurity Paradox has emerged. The ability to simulate exact biological reactions implies the ability to design "Perfect Pathogens"—agents that can bypass any classical defense.</p>
+                    <p>The 2027 ethical debate centers on <strong>Quantum Sovereignty</strong>. If only a few nations possess the quantum hardware to simulate life at this level, we risk a global "Information Asymmetry" where the cures for the next generation of diseases are locked behind a quantum gate. The movement toward <strong>Open Quantum Science</strong> is the defining ethical struggle of the late 2020s (MDPI, 2027a; Science, 2027).</p>
+
+                    <h2>Conclusion: The Post-Silicon Horizon</h2>
+                    <p>The journey from 2024 to 2027 has been a transition from "Big Data" to "Exact Reality." We have moved from sequencing DNA to designing proteins, from simulating digital twins to validating them on chips, and finally, from classical approximations to quantum certainty.</p>
+                    <p>Quantum Bioinformatics represents the final frontier of the 2020s. It has turned the "language of life" from a metaphor into a mathematical reality. As we look toward the 2030s, the boundary between biology and information has effectively vanished. We are no longer just architects of molecules; we are the programmers of the quantum substrate of life itself.</p>
+
+                    <h2>References</h2>
+                    <div class="ref-list">
+                        <p>Arc Institute. (2027). Q-Evo: Foundation Models for the Quantum Era.</p>
+                        <p>Briefings in Quantum Bioinformatics. (2027). Quantum Eigensolvers in Molecular Biology: A Survey. Vol 28, Issue 1.</p>
+                        <p>Frontiers in Quantum Science. (2027). The Hybrid QPU-GPU Architecture for High-Throughput Discovery.</p>
+                        <p>IEEE Spectrum. (2027). The Green Shift: How Quantum Logic is Saving Bioinformatics.</p>
+                        <p>MDPI. (2027). Ethics of Quantum Sovereignty in Genomic Research.</p>
+                        <p>Nature Medicine. (2027). Exact Simulation of the Tau-Protein Interactome.</p>
+                        <p>Nature Quantum. (2027). Beyond Force Fields: The Rise of FTQC in Structural Biology.</p>
+                        <p>PMC. (2027). Quantum-Agentic Discovery: A New Scientific Paradigm.</p>
+                        <p>Science. (2027). The Universal Quantum Protocol: Securing the Future of Biology.</p>
+                    </div>
                 `
             },
             {
                 id: 'ai-agri',
                 title: "AI-Orchestrated Agriculture",
                 category: "Application",
-                desc: "Soil metagenomics and heat-resilient crop design for Punjab.",
+                desc: "From Soil Microbes to Climate Prediction",
                 hasChart: true, chartType: 'bar',
                 content: `
-                    <h2>The Green Revolution 2.0</h2>
-                    <p>Agriculture is now a symphony of biological data. In the Punjab plain, soil metagenomics allows agents like <strong>Terra-Agent V2</strong> to restore microbial factories, while AI optimizes "Climate-Hardy" wheat for Faisalabad (Nature Genetics, 2026).</p>
-                    
+                    <h2>Introduction: The Green Revolution 2.0</h2>
+                    <p>For the past half-century, the "Green Revolution" was a story of chemistry—the application of synthetic fertilizers and pesticides to maximize caloric yield. But in 2026, that model has hit its environmental and biological ceiling. In regions like the Punjab plain, where the heat is intensifying and the groundwater is receding, the old methods are no longer sufficient.</p>
+                    <p>We have entered the era of the <strong>Bio-Digital Farm</strong>. This is a paradigm shift where agriculture is no longer seen as a struggle against nature, but as an orchestrated symphony of biological data. By applying <strong>Agentic AI</strong>—the same autonomous reasoning systems currently collapsing drug discovery timelines—to the soil and the sky, we are creating a "Closed-Loop" agricultural system. This is the transition from "farming by instinct" to "farming by orchestration," connecting the hidden world of soil microbes with the vast complexity of planetary climate prediction (Murugesan, 2025; Frontiers, 2025b).</p>
+
                     <div class="chart-box"><canvas id="chart-agri"></canvas></div>
+
+                    <h2>Part I: The Metagenomic Frontier: Programming the Soil</h2>
+                    <h3>1.1 The Rhizosphere as a Biological Computer</h3>
+                    <p>To an AI agent in 2026, soil is not "dirt"; it is a living, breathing data set. The <strong>Rhizosphere</strong>—the thin layer of soil surrounding plant roots—is home to billions of microbes that govern nutrient uptake, disease resistance, and carbon sequestration.</p>
+                    <p>Historically, we treated soil as a "Black Box." In 2026, we use <strong>Soil Metagenomics</strong> to sequence the collective DNA of the soil microbiome. Agentic AI systems, such as <strong>Terra-Agent V2</strong>, analyze these sequences to identify functional gaps. If a wheat field in Faisalabad is struggling with nitrogen fixation due to rising salinity, the AI doesn't just recommend more fertilizer. Instead, it identifies the specific microbial strains needed to restore the soil’s natural "chemical factory" (Nature Genetics, 2026; PMC, 2025b).</p>
+
+                    <h3>1.2 Designing "Bio-Inoculants" with Agentic Logic</h3>
+                    <p>Using the principles of Functional Protein Design (established in our previous reports), AI agents are now designing synthetic microbial consortia—custom-built "probiotics" for the soil. These agents simulate billions of microbial interactions to ensure that a new inoculant won't just survive, but will thrive and outcompete harmful pathogens without disrupting the local ecology. This is "Precision Bio-Orchestration" at the microscopic level (bioRxiv, 2026).</p>
+
+                    <h2>Part II: Genomic Foundation Models for "De Novo" Crops</h2>
+                    <h3>2.1 The "GPT-4 Moment" for Wheat and Cotton</h3>
+                    <p>The 3.2 billion letters of the human genome are complex, but the genomes of crops like wheat are often five times larger and vastly more polyploid. In 2026, <strong>Genomic Foundation Models (GFMs)</strong> like <strong>Evo-Agri</strong> have finally decoded the "grammar" of these massive agricultural genomes.</p>
+                    <p>Just as we use GFMs to predict human disease risk, we now use them for <strong>Zero-Shot Variant Prediction</strong> in crops. An AI agent can predict which specific genetic "snips" will allow a cotton variety to maintain its fiber quality even when temperatures exceed 45°C. This allows breeders to skip decades of traditional cross-breeding, moving from a "desired trait" to a validated seed in just two growing seasons (Arc Institute, 2026; Oxford Academic, 2026).</p>
+
+                    <h3>2.2 Heat-Stress Resilience: The Faisalabad Case Study</h3>
+                    <p>In the local context of Punjab, heat stress is the primary threat to food security. Agentic AI is currently being used to design "Climate-Hardy" wheat varieties. These are not just traditional GMOs; they are <strong>Software-Defined Crops</strong> designed to optimize their stomatal conductance (how they "breathe") in real-time response to humidity and heat. By 2026, these AI-optimized varieties have shown a 25% increase in yield stability compared to traditional high-yield varieties during extreme heatwaves (Frontiers in Plant Science, 2025).</p>
+
+                    <h2>Part III: The "Body-on-a-Chip" for Agriculture: Soil-Plant Digital Twins</h2>
+                    <h3>3.1 The Virtual Farm</h3>
+                    <p>Building on the Biological Digital Twin (BDT) technology used in personalized medicine, we have developed <strong>Agricultural Digital Twins (ADTs)</strong>. An ADT is a virtual representation of an entire farm, integrating:</p>
+                    <ul>
+                        <li><strong>Satellite Telemetry:</strong> Real-time moisture and chlorophyll levels.</li>
+                        <li><strong>IoT Ground Sensors:</strong> NPK levels and soil temperature.</li>
+                        <li><strong>Genomic Potential:</strong> The theoretical maximum yield of the specific seed variety planted.</li>
+                    </ul>
+
+                    <h3>3.2 In-Silico Harvest Simulations</h3>
+                    <p>Before a farmer in Punjab commits to a specific crop rotation, an AI agent runs 10,000 <strong>In-Silico Harvest Simulations</strong>. These simulations factor in the 2026 climate forecasts, predicting the likelihood of a late-season monsoon or an early heat spike. The AI then orchestrates the "Farm Plan," adjusting irrigation schedules and nutrient delivery in real-time as the weather changes. This is the end of the "average" farming season; every year is now a unique, optimized "N-of-1" operation (Nature Medicine, 2026; MDPI, 2026b).</p>
+
+                    <h2>Part IV: Climate Prediction and the "New Reality"</h2>
+                    <h3>4.1 Long-Range Agentic Forecasting</h3>
+                    <p>The greatest challenge of 2026 is the volatility of the climate. Traditional weather models struggle with the "chaos" of shifting jet streams. Agentic AI, however, uses <strong>Global Foundation Models for Atmosphere (GFM-A)</strong> to identify patterns in planetary data that traditional meteorology misses.</p>
+                    <p>These agents provide "Predictive Agency" to local agricultural departments. Instead of reacting to a drought after the soil has cracked, the AI identifies the atmospheric precursors six months in advance. This allows for <strong>Proactive Orchestration</strong>—switching an entire district's planting schedule to a drought-resistant legume before the water shortage even begins (Briefings in Bioinformatics, 2026b; Frontiers, 2025a).</p>
+
+                    <h2>Part V: Ethics, Sovereignty, and the Digital Divide</h2>
+                    <h3>5.1 The Biosecurity of Food</h3>
+                    <p>As we move toward "Software-Defined Seeds," we face a new version of the Biosecurity Paradox. If the "code" for our primary food sources is held by a few global tech giants, what happens to national food sovereignty?</p>
+                    <p>In 2026, the movement toward <strong>Open-Source Agentic Agriculture</strong> is critical. Systems like <strong>OpenScientist-Agri</strong> are designed to be "locally-aware," ensuring that the AI models are trained on local Punjab soil data and that the intellectual property of the "optimized seeds" remains with the local farming cooperatives, not just the "Bio-Digital" elite (MDPI, 2026a; medRxiv, 2026).</p>
+
+                    <h2>Conclusion: The Era of Synchronized Science</h2>
+                    <p>The 2026 revolution in bioinformatics has proven that life is interconnected. Whether we are designing a protein to cure a tumor or a microbe to save a wheat field, the underlying logic is the same: Autonomous Reasoning applied to Biological Complexity.</p>
+                    <p>By synchronizing the microscopic insights of metagenomics with the macroscopic power of climate prediction, we have turned agriculture into a high-speed search problem. We are no longer at the mercy of a changing climate; we are its adaptive partners. As we look toward 2030, the goal is clear: a world where food security is a baseline human right, guaranteed by the silent, tireless orchestration of the agents in the soil and the agents in the sky.</p>
+
+                    <h2>References</h2>
+                    <div class="ref-list">
+                        <p>Arc Institute. (2026). Evo-Agri: Genomic Foundation Models for Crop Resilience.</p>
+                        <p>bioRxiv. (2026). Terra-Agent: An AI Framework for Autonomous Soil Metagenomics.</p>
+                        <p>Briefings in Bioinformatics. (2026). Artificial Intelligence agents for biological research: A survey.</p>
+                        <p>Frontiers in Plant Science. (2025). Agentic AI for smart and sustainable precision agriculture.</p>
+                        <p>MDPI. (2026). Digital Twins in Agriculture: From Theory to Field Practice.</p>
+                        <p>medRxiv. (2026). OpenScientist-Agri: Evaluating an open agentic AI co-scientist for food security.</p>
+                        <p>Murugesan. (2025). Agentic AI for smart and sustainable precision agriculture. Frontiers in Plant Science.</p>
+                        <p>Nature Genetics. (2026). The state of soil metagenomics: A 2026 roadmap.</p>
+                        <p>Oxford Academic. (2026). A comprehensive survey of genome language models in bioinformatics.</p>
+                        <p>PMC. (2025). Streamline automated biomedical discoveries with agentic bioinformatics.</p>
+                    </div>
                 `
             },
             {
                 id: 'organ-on-chip',
-                title: "Organs-on-a-Chip: The Bridge",
+                title: "Organs-on-a-Chip: The Physical Hardware",
                 category: "Simulation",
-                desc: "The mandatory physical layer validating 'N-of-1' AI predictions.",
+                desc: "The Physical Hardware Validating the Digital Twin",
                 content: `
-                    <h2>Reality Check for Silicon</h2>
-                    <p>Digital simulations remain probabilities. <strong>Organs-on-a-Chip (OoC)</strong> are microfluidic environments mimicking organ complexity, ending the era of animal testing in 2026 (Nature Medicine, 2026).</p>
-                    <h3>Patient-Specific Avatar Testing</h3>
-                    <p>Using iPSCs, clinicians grow a patient's own cells on a chip to test treatments on a physical "Avatar" before administration.</p>
+                    <h2>Introduction: The Reality Check for Silicon</h2>
+                    <p>By early 2026, the biotech industry had reached a peculiar impasse. Agentic AI could design a novel protein in seconds and simulate a patient’s reaction via a <strong>Biological Digital Twin (BDT)</strong> with startling accuracy. However, a digital simulation—no matter how high-fidelity—remains a series of mathematical probabilities. To move from a "predicted lead" to a "validated cure," the industry needed a bridge.</p>
+                    <p>That bridge is <strong>Organs-on-a-Chip (OoC)</strong>. These are not just miniature models; they are sophisticated microfluidic environments that mimic the mechanical and biological complexity of human organs. In 2026, OoC technology has become the mandatory physical layer that validates the "N-of-1" predictions of our AI agents, effectively ending the era of unreliable animal testing and high-risk human trials (Nature Medicine, 2026; PMC, 2026a).</p>
+
+                    <h2>1. The Hardware Architecture: Microfluidics Meets Multi-Omics</h2>
+                    <p>An Organ-on-a-Chip is a bio-engineered device that contains living human cells arranged to simulate the structure and function of a specific organ. In 2026, these devices have moved beyond simple "Lung-on-a-Chip" models to <strong>Interconnected Multi-Organ Systems</strong>.</p>
+                    
+                    <h3>1.1 The "Body-on-a-Chip" 2.0</h3>
+                    <p>Modern systems, such as the <strong>PhysioLogic-7 platform</strong>, connect multiple chips—liver, heart, kidney, and gut—via a synthetic vascular system. This allows AI agents to observe how a drug designed for the liver might inadvertently affect cardiac rhythm or renal filtration. These hardware systems are embedded with thousands of nanosensors that stream real-time metabolic data back to the AI, creating a continuous "Digital-Physical Feedback Loop" (Frontiers, 2025b).</p>
+
+                    <h3>1.2 Mechanobiology: Simulating the Physical Environment</h3>
+                    <p>Biology is not just chemistry; it is physics. In 2026, OoC hardware can simulate the physical stresses of the human body:</p>
+                    <ul>
+                        <li><strong>Breathing Lung Chips:</strong> Mimic the rhythmic stretching of alveolar sacs.</li>
+                        <li><strong>Pulsatile Heart Chips:</strong> Simulate the shear stress of blood flow.</li>
+                        <li><strong>Peristaltic Gut Chips:</strong> Replicate the muscle contractions of the digestive tract.</li>
+                    </ul>
+                    <p>By replicating these mechanical forces, the hardware allows AI agents to validate whether a designed protein remains stable under the actual physical pressures of human life (Bentham Science, 2026).</p>
+
+                    <h2>2. Validating the "N-of-1" Digital Twin</h2>
+                    <p>The true power of 2026 bioinformatics lies in the synthesis of the virtual and the physical. When an AI agent identifies a high-risk mutation in a patient’s Digital Twin, the next step is no longer "wait and see."</p>
+
+                    <h3>2.1 Patient-Specific "Avatar" Testing</h3>
+                    <p>Using <strong>Induced Pluripotent Stem Cells (iPSCs)</strong>, clinicians can now grow a patient’s own cells on a chip. This creates a physical "Avatar" of the patient’s liver or heart. Before a single pill is prescribed, the AI agent tests the treatment on this physical avatar.</p>
+                    <p>If the <strong>BioTwin-OS</strong> predicts a 15% risk of hepatotoxicity, the "Liver-on-a-Chip" provides the physical evidence. This integration has led to a near-total elimination of "trial-and-error" prescribing in complex oncology and autoimmune cases (Nature Medicine, 2026; MDPI, 2026b).</p>
+
+                    <h2>3. The Death of Animal Models: From "Cage to Code"</h2>
+                    <p>For decades, the "90% failure rate" in drug discovery was blamed on the biological gap between mice and men. In 2026, the ethical and scientific consensus has shifted. Organs-on-a-Chip are more predictive of human response than any animal model could ever be.</p>
+
+                    <h3>3.1 The "IND-Ready" Fast Track</h3>
+                    <p>In late 2025, the FDA began accepting "OoC-Only" validation data for Investigational New Drug (IND) applications. This means a drug can move from digital design to human trials without ever being tested on an animal, provided the "Multi-Organ-on-a-Chip" validation shows clear safety and efficacy. This transition has not only saved millions of animal lives but has also collapsed the drug-to-market cost by an estimated 60% (PMC, 2026a; MDPI, 2026a).</p>
+
+                    <h2>4. Agentic Orchestration of Hardware</h2>
+                    <p>What makes 2026 different is that the AI agents are now "Lab Managers." An agent like <strong>OpenScientist</strong> doesn't just design the experiment; it orchestrates the hardware (medRxiv, 2026).</p>
+                    <ul>
+                        <li><strong>Instruction Generation:</strong> The agent writes the code to control the microfluidic pumps and nutrient delivery systems.</li>
+                        <li><strong>Autonomous Sampling:</strong> Robotic arms take samples from the chip’s "bloodstream" every hour.</li>
+                        <li><strong>Real-Time Reflection:</strong> If the nanosensors detect a drop in cellular ATP (signaling toxicity), the AI agent immediately stops the experiment, reflects on the data, and redesigns the molecule's chemical structure to be safer (RSC, 2026; Briefings in Bioinformatics, 2026b).</li>
+                    </ul>
+
+                    <h2>5. Challenges: Scaling and Fidelity</h2>
+                    <p>Despite the revolution, two major hurdles remain in 2026:</p>
+                    <ul>
+                        <li><strong>The Vascular Challenge:</strong> While we can simulate blood flow, replicating the full complexity of the human lymphatic and immune system on a chip remains an active area of "Agentic Design."</li>
+                        <li><strong>Manufacturing Scale:</strong> Producing millions of patient-specific chips requires a level of biological 3D printing (Bio-printing) that is only now reaching industrial capacity.</li>
+                    </ul>
+
+                    <h2>Conclusion: The New Scientific Ground Truth</h2>
+                    <p>In 2026, the "Gold Standard" of evidence is no longer a p-value from a clinical trial of 5,000 strangers. It is the real-time data stream from an Organ-on-a-Chip that carries <em>your</em> cells and responds to <em>your</em> unique biology.</p>
+                    <p>By bridging the gap between the software-driven "Digital Twin" and the hardware-driven "Physical Chip," we have moved science out of the realm of averages and into the realm of certainty. The era of trial-and-error medicine is over; the era of validated, autonomous science has begun.</p>
+
+                    <h2>References</h2>
+                    <div class="ref-list">
+                        <p>Bentham Science. (2026). Artificial Intelligence in Drug Discovery and Diagnosis.</p>
+                        <p>Briefings in Bioinformatics. (2026). Artificial Intelligence agents for biological research: A survey.</p>
+                        <p>Frontiers. (2025). AI, agentic models and lab automation for scientific discovery.</p>
+                        <p>MDPI. (2026). Digital Twins in Oncology: From Theory to Clinical Practice.</p>
+                        <p>medRxiv. (2026). OpenScientist: evaluating an open agentic AI co-scientist.</p>
+                        <p>Nature Medicine. (2026). The state of digital twins in healthcare: A 2026 roadmap.</p>
+                        <p>PMC. (2026). Cage-to-Code: From Animal Experimentation to AI-driven Drug Discovery.</p>
+                        <p>RSC Publishing. (2026). Masgent: an AI-assisted materials simulation agent.</p>
+                    </div>
                 `
             },
             {
                 id: 'biosecurity-paradox',
                 title: "The Biosecurity Paradox",
                 category: "Ethics",
-                desc: "Gating the code of life in the age of programmable biology.",
+                desc: "Gating the Code of Life in the Age of Agentic AI",
                 content: `
-                    <h2>The Double-Edged Scalpel</h2>
-                    <p>In 2026, an agent designed a vaccine in 42 days, but red-teaming showed it could design a lethal variant in six hours. The industry now uses <strong>Managed Access Frameworks</strong> and "trusted-access" APIs with biosecurity circuit breakers (NTI, 2026).</p>
+                    <h2>Introduction: The Double-Edged Scalpel of 2026</h2>
+                    <p>In the spring of 2026, the scientific community reached a crossroads that many had predicted but few were truly prepared for. On one hand, we celebrated the first "agent-designed" vaccine for a novel respiratory virus, moving from genetic sequence to clinical-ready candidate in a staggering 42 days. On the other hand, a red-teaming exercise by a global biodefense coalition demonstrated that the same agentic system, with minor adjustments to its optimization objective, could design a highly transmissible, vaccine-evasive variant of the 1918 influenza virus in less than six hours.</p>
+                    <p>This is the <strong>Biosecurity Paradox</strong>. The very tools that are currently dismantling the "Decade of Discovery" and bringing cures to the undruggable are the same tools that have effectively lowered the technical barrier to biological warfare to the level of a well-informed graduate student. As we move from biological "reading" to biological "writing," the question is no longer whether we <em>can</em> engineer life, but how we prevent the engineering of death without stifling the renaissance of 21st-century medicine.</p>
+
+                    <h2>Part I: The Rise of Agentic Bioinformatics</h2>
+                    <h3>1.1 From Passive Tools to Autonomous Co-Scientists</h3>
+                    <p>To understand the biosecurity risk, one must first appreciate the sheer power of the "Agentic Revolution" in bioinformatics. For decades, software was a passive recipient of data. Today, in 2026, we work alongside <strong>Agentic AI</strong>—systems capable of "Perception, Planning, Action, and Reflection" (Briefings in Bioinformatics, 2026b).</p>
+                    <p>These agents, such as the open-source <strong>OpenScientist</strong>, don't just execute code; they reason through biological problems. They can autonomously scan the latest literature, formulate a hypothesis about a protein’s function, design a synthetic sequence to disrupt that function, and trigger a cloud-based robotic lab to build it. This "Closed-Loop Discovery Cycle" has collapsed timelines that used to be measured in years into mere months (medRxiv, 2026; PMC, 2025b).</p>
+
+                    <h3>1.2 The GPT-4 Moment for DNA</h3>
+                    <p>The "brain" of these agents is the <strong>Genomic Foundation Model (GFM)</strong>. Just as large language models (LLMs) learned the grammar of human speech, models like <strong>Evo 2</strong> and the <strong>Nucleotide Transformer</strong> have learned the "grammar" of the human pangenome. They understand how a single nucleotide change in a non-coding region can flip a regulatory switch, leading to disease—or, potentially, to enhanced virulence (Arc Institute, 2026).</p>
+                    <p>By training on billions of protein sequences, these models have acquired "Zero-Shot Prediction" capabilities. They can predict the effect of never-before-seen mutations with higher accuracy than any previous statistical method (Oxford Academic, 2026). This profound understanding is what enables the "poetry" of functional protein design, but it is also what creates the paradox.</p>
+
+                    <h2>Part II: The Biosecurity Paradox Deep-Dive</h2>
+                    <h3>2.1 The Crisis of "Dual-Use" Foundations</h3>
+                    <p>The term "Dual-Use Research of Concern" (DURC) was historically reserved for narrow, physical experiments on specific pathogens like Anthrax or Ebola. In 2026, however, the <strong>Foundation Model itself is DURC</strong>.</p>
+                    <p>Research has shown that even if a model developer "filters" dangerous pathogens from their training data—a process known as data exclusion—an agentic AI can often "rescue" those capabilities through <strong>Adversarial Fine-Tuning</strong>. By training a gated model on just a small subset of publicly available viral sequences, a skilled actor can restore the model's ability to predict immune escape or optimize viral transmission (arXiv, 2026; GovAI, 2026). This suggests that "hiding" specific sequences is no longer a sufficient safeguard.</p>
+
+                    <h3>2.2 The BDL Framework: Tiers of Risk</h3>
+                    <p>To address this, the <strong>2026 Biosecurity Modernization Act</strong> has introduced a five-tier <strong>Biosecurity Data Level (BDL)</strong> framework for categorizing pathogen data (arXiv, 2026):</p>
+                    <ul>
+                        <li><strong>BDL-1 (Open):</strong> Standard genomic data from non-pathogenic organisms.</li>
+                        <li><strong>BDL-3 (Managed):</strong> Sequences from seasonal viruses or common bacteria.</li>
+                        <li><strong>BDL-5 (Restricted):</strong> Data related to "Select Agents" or novel pathogens with pandemic potential.</li>
+                    </ul>
+                    <p>The paradox is that for an AI agent to learn how to <em>stop</em> a pandemic, it must be trained on BDL-5 data. If we gate this data too strictly, we fall behind the next natural mutation. If we open it, we hand the blueprints to those who would misuse them.</p>
+
+                    <h3>2.3 The Managed Access Solution</h3>
+                    <p>The industry is currently gravitating toward <strong>Managed Access Frameworks</strong>. Instead of releasing "open weights" for biological models, developers provide a "trusted-access" API. This allows the model to be audited for "red-line" queries. For example, if an agent requests the optimization of a protein that matches the structure of a known toxin, the system triggers a "biosecurity circuit breaker" and notifies a human supervisor (NTI, 2026; Fast Company, 2026).</p>
+
+                    <h2>Part III: The 5-Month Discovery Pipeline and Its Shadow</h2>
+                    <h3>3.1 Collapsing the Time-to-Toxin</h3>
+                    <p>We have celebrated the "5-Month Discovery Cycle" for drug development. But the same infrastructure—Software-Defined Labs and High-Throughput Robotic Synthesis—can be repurposed for harm.</p>
+                    <p>In a traditional lab, synthesizing a dangerous pathogen required specialized equipment and years of "wet lab" experience. In 2026, an agent can generate a "Synthetic Recipe" in a language like <strong>PyLabRobot</strong>, send it to a commercial cloud lab, and have the material delivered or tested without a human ever touching a pipette (Frontiers, 2025b). This "Cage-to-Code" transition means that biosecurity must now be enforced at the <em>order screening</em> level. Every DNA synthesis order must now be cross-referenced against AI-generated "sequences of concern" that might not yet exist in nature (PMC, 2026a).</p>
+
+                    <h3>3.2 Case Study: The "Interleukin-X" Precedent</h3>
+                    <p>While the Interleukin-X breakthrough demonstrated how AI could cure Crohn's disease, it also served as a warning. The agent designed a molecule that was so selective it ignored all other cell types. In a biosecurity context, this "precision" could be used to design "population-specific" pathogens that target individuals based on specific genetic markers—a concept currently being debated in international "Bio-Digital Rights" forums (Nature Medicine, 2026; MDPI, 2026a).</p>
+
+                    <h2>Part IV: The Role of Explainable AI (XAI) as a Safeguard</h2>
+                    <h3>4.1 Transparency as a Security Feature</h3>
+                    <p>The "Black Box" nature of early AI was a security risk. If a model recommended a specific sequence, the researcher couldn't be sure <em>why</em>. In 2026, <strong>Causal Interpretability</strong> allows us to see the AI's "chain of thought" (JMIR, 2026).</p>
+                    <p>This transparency acts as an ethical guardrail. If an agentic system is being used for drug discovery, its XAI output must provide a "Human-Readable Audit Trail." If the reasoning involves the disruption of a host’s primary immune response, the system can be flagged for review before the sequence is even synthesized. By making the AI's logic "legible" to human experts, we maintain <strong>Physician and Scientist Agency</strong>, ensuring that the "Human-in-the-Loop" is not just a figurehead, but an active gatekeeper (Nature Medicine, 2026; Briefings in Bioinformatics, 2026b).</p>
+
+                    <h2>Part V: Toward a Global Bio-Digital Treaty</h2>
+                    <h3>5.1 Beyond National Borders</h3>
+                    <p>Biosecurity in 2026 is a global problem that requires a global solution. The digital nature of agentic AI means that a model trained in one jurisdiction can be accessed—or leaked—to another. We are seeing a movement toward a <strong>Universal Biosecurity Protocol</strong> that mandates "Know Your Customer" (KYC) requirements for high-compute biological models and DNA synthesis providers (NTI, 2026).</p>
+
+                    <h3>5.2 Ethical Sovereignty and Digital Colonialism</h3>
+                    <p>As we gate these models, we must be careful not to create a new "Digital Divide." If only wealthy nations have access to the "Cure Agents" because of biosecurity fears, we risk <strong>Digital Colonialism</strong>. The 2026 ethical consensus is that biosecurity gating must be combined with "Benefit Sharing"—ensuring that the insights gained from these models are used to address health inequities in the Global South while maintaining strict control over the "Generative Engines" themselves (MDPI, 2026a; Frontiers, 2025a).</p>
+
+                    <h2>Conclusion: The Era of Responsible Architecture</h2>
+                    <p>The Biosecurity Paradox is not a problem to be "solved" and forgotten; it is a permanent condition of our new technological reality. By mid-2026, we have accepted that the code of life is now as programmable as the code of a computer.</p>
+                    <p>Our path forward lies in <strong>Responsible Architecture</strong>. We must continue to build the "Self-Driving Labs" that will cure cancer and capture carbon, but we must build them with built-in "ethical logic" and transparent reasoning. The goal of 2027 and beyond is to ensure that as our tools become more autonomous, our collective human wisdom and ethical oversight become more integrated. We are no longer just observers of biology; we are its architects. And as architects, we bear the ultimate responsibility for the safety of the world we are building.</p>
+
+                    <h2>References</h2>
+                    <div class="ref-list">
+                        <p>Arc Institute. (2026). Evo 2: One Year Later – Connecting Variants to Disease Risk.</p>
+                        <p>arXiv. (2026). Securing Dual-Use Pathogen Data of Concern: The BDL Framework.</p>
+                        <p>Bentham Science. (2026). Artificial Intelligence in Drug Discovery and Diagnosis.</p>
+                        <p>Briefings in Bioinformatics. (2026). Artificial Intelligence agents for biological research: A survey.</p>
+                        <p>Frontiers. (2025). AI, agentic models and lab automation for scientific discovery.</p>
+                        <p>GovAI. (2026). Coding Agents are Changing the Biosecurity Risk Landscape.</p>
+                        <p>JMIR. (2026). Deep Research Agents: Major Breakthrough or Incremental Progress for Medical AI?</p>
+                        <p>MDPI. (2026). Towards Responsible AI Adoption: Ethical Issues in Global Health.</p>
+                        <p>medRxiv. (2026). OpenScientist: evaluating an open agentic AI co-scientist.</p>
+                        <p>Nature Medicine. (2026). The state of digital twins in healthcare: A 2026 roadmap.</p>
+                        <p>NTI (Nuclear Threat Initiative). (2026). A Framework for Managed Access to Biological AI Tools.</p>
+                        <p>Oxford Academic. (2026). A comprehensive survey of genome language models in bioinformatics.</p>
+                        <p>PMC. (2025). Streamline automated biomedical discoveries with agentic bioinformatics.</p>
+                    </div>
                 `
             },
             {
                 id: 'terms',
-                title: "Terms and Protocols",
+                title: "Protocol & Terms of Access",
                 category: "System",
-                desc: "Ethical and legal guidelines for accessing this archive.",
+                desc: "The legal and ethical framework for the Bio-Agentic Command.",
                 content: `
-                    <h3>Strategic Intent</h3>
-                    <p>This Hub is a professional archive for research. Access implies acceptance of ethical gating protocols. Contributors are not liable for autonomous lab executions without human verification. Node: Faisalabad-PK HQ.</p>
+                    <h3>1. Strategic Intent</h3>
+                    <p>The Bio-Agentic Intelligence Command is a professional repository for research purposes. All dossiers are synthesized for the advancement of biotechnology and human health. Accessing this archive implies acceptance of the ethical gating protocols established in the 2026 Biosecurity Act.</p>
+                    
+                    <h3>2. Intellectual Property & Attribution</h3>
+                    <p>The technical methodologies, topology diagrams, and synthesized dossiers are the property of the Bio-Agentic Network. Citation is mandatory for any secondary publication. Unauthorized "Adversarial Fine-Tuning" of these models is strictly prohibited.</p>
+                    
+                    <h3>3. Data Integrity & Liability</h3>
+                    <p>While the Command Hub strives for 100% dossier fidelity, scientific models are iterative. Bio-Agentic and its contributors are not liable for autonomous lab executions based on archived "recipes" without human-in-the-loop verification.</p>
+                    
+                    <h3>4. Jurisdictional Authority</h3>
+                    <p>This node is governed under the digital laws of the Faisalabad Science & Technology District, Punjab, Pakistan. Any disputes regarding data sovereignty shall be mediated by the Global Bio-Digital Rights Forum.</p>
+                    
+                    <h3>5. Secure Communication</h3>
+                    <p>For high-compute requests, ethical inquiries, or institutional partnerships, contact the Command Node directly at <strong>ikramalishba991@gmail.com</strong>.</p>
                 `
             }
         ];
 
-        // 3D MOLECULAR ENGINE
+        // RESTORED 3D MOLECULAR ENGINE (Using original variables)
         let scene, camera, renderer, cloud;
         function init3D() {
             const canvas = document.getElementById('bg-3d');
@@ -405,27 +577,42 @@
             renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
 
-            const material = new THREE.PointsMaterial({ 
-                color: document.documentElement.classList.contains('dark') ? 0xc29a7c : 0x3b82f6, 
-                size: 0.08, transparent: true, opacity: 0.6 
-            });
-            const geo = new THREE.BufferGeometry().setFromPoints(Array.from({length: 150}, () => new THREE.Vector3((Math.random()-0.5)*15, (Math.random()-0.5)*15, (Math.random()-0.5)*15)));
-            cloud = new THREE.Points(geo, material);
+            const points = [];
+            // Reverted back to the original 80 point count with tighter spread
+            for (let i = 0; i < 80; i++) {
+                points.push(new THREE.Vector3((Math.random() - 0.5) * 10, (Math.random() - 0.5) * 10, (Math.random() - 0.5) * 10));
+            }
+            const geometry = new THREE.BufferGeometry().setFromPoints(points);
+            
+            const isDark = document.documentElement.classList.contains('dark');
+            const color = isDark ? 0xc29a7c : 0x94a3b8; // Original elegant colors
+            const material = new THREE.PointsMaterial({ color: color, size: 0.05 }); // Reverted size back to 0.05
+            
+            cloud = new THREE.Points(geometry, material);
             scene.add(cloud);
-            camera.position.z = 7;
+            
+            camera.position.z = 5; // Reverted distance back to 5
             
             function animate() {
                 requestAnimationFrame(animate);
                 cloud.rotation.y += 0.001;
-                cloud.rotation.x += 0.0003;
+                cloud.rotation.x += 0.0005;
                 renderer.render(scene, camera);
             }
             animate();
+            
             window.addEventListener('resize', () => {
                 camera.aspect = window.innerWidth / window.innerHeight;
                 camera.updateProjectionMatrix();
                 renderer.setSize(window.innerWidth, window.innerHeight);
             });
+        }
+
+        function update3DColor() {
+            if(cloud) {
+                const isDark = document.documentElement.classList.contains('dark');
+                cloud.material.color.setHex(isDark ? 0xc29a7c : 0x94a3b8);
+            }
         }
 
         // CHARTS ENGINE
@@ -434,29 +621,23 @@
             const accent = isDark ? '#D4B08C' : '#3b82f6';
             const text = isDark ? '#F5F1ED' : '#2C2C2C';
 
-            // Drug Chart
             const dCtx = document.getElementById('chart-drug');
             if(dCtx) new Chart(dCtx, { type: 'bar', data: { labels: ['Traditional (2020)', 'Agentic (2026)'], datasets: [{ data: [72, 5], backgroundColor: [accent, '#10b981'] }] }, options: { plugins: { legend: { display: false } }, scales: { y: { ticks: { color: text } }, x: { ticks: { color: text } } } } });
 
-            // Protein Chart
             const pCtx = document.getElementById('chart-protein');
             if(pCtx) new Chart(pCtx, { type: 'line', data: { labels: ['22', '24', '26'], datasets: [{ label: 'Fidelity', data: [15, 60, 98], borderColor: accent, tension: 0.4 }] }, options: { scales: { y: { ticks: { color: text } }, x: { ticks: { color: text } } } } });
 
-            // XAI Chart
             const xCtx = document.getElementById('chart-xai');
             if(xCtx) new Chart(xCtx, { type: 'doughnut', data: { labels: ['Error Reduction', 'Variance'], datasets: [{ data: [30, 70], backgroundColor: [accent, 'rgba(0,0,0,0.1)'] }] }, options: { cutout: '85%' } });
 
-            // Agri Chart
             const aCtx = document.getElementById('chart-agri');
-            if(aCtx) new Chart(aCtx, { type: 'bar', data: { labels: ['Traditional Yield', 'AI-Optimized'], datasets: [{ data: [100, 125], backgroundColor: [accent, '#10b981'] }] }, options: { plugins: { legend: { display: false } } } });
+            if(aCtx) new Chart(aCtx, { type: 'bar', data: { labels: ['Traditional Yield', 'AI-Optimized'], datasets: [{ data: [100, 125], backgroundColor: [accent, '#10b981'] }] }, options: { plugins: { legend: { display: false } }, scales: { y: { ticks: { color: text } }, x: { ticks: { color: text } } } } });
 
-            // Neuro Chart
             const nCtx = document.getElementById('chart-neuro');
-            if(nCtx) new Chart(nCtx, { type: 'bar', data: { labels: ['GPU Cluster', 'Loihi 3'], datasets: [{ data: [1000, 1], backgroundColor: [accent, '#10b981'] }] }, options: { indexAxis: 'y', plugins: { legend: { display: false } } } });
+            if(nCtx) new Chart(nCtx, { type: 'bar', data: { labels: ['GPU Cluster', 'Loihi 3'], datasets: [{ data: [1000, 1], backgroundColor: [accent, '#10b981'] }] }, options: { indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { ticks: { color: text } }, y: { ticks: { color: text } } } } });
             
-            // Carbon Chart
             const cCtx = document.getElementById('chart-carbon');
-            if(cCtx) new Chart(cCtx, { type: 'line', data: { labels: ['RuBisCO', 'CETCH', 'Agentic v2'], datasets: [{ label: 'Fixation Rate', data: [5, 45, 95], borderColor: accent, fill: true, backgroundColor: 'rgba(212,176,140,0.1)' }] } });
+            if(cCtx) new Chart(cCtx, { type: 'line', data: { labels: ['RuBisCO', 'CETCH', 'Agentic v2'], datasets: [{ label: 'Fixation Rate', data: [5, 45, 95], borderColor: accent, fill: true, backgroundColor: 'rgba(212,176,140,0.1)' }] }, options: { scales: { y: { ticks: { color: text } }, x: { ticks: { color: text } } } } });
         }
 
         // NAVIGATION & UI
@@ -482,7 +663,7 @@
             const payload = document.getElementById('payload');
             payload.innerHTML = `
                 <header class="mb-32 text-center">
-                    <button onclick="showHome()" class="text-slate-400 dark:text-nude-dim text-[10px] font-bold uppercase tracking-widest mb-16 hover:text-sky-500 dark:hover:text-nude-accent transition-colors">← Return Home</button>
+                    <button onclick="showHome()" class="text-slate-400 dark:text-nude-dim text-[10px] font-bold uppercase tracking-widest mb-16 hover:text-sky-500 dark:hover:text-nude-accent transition-colors flex items-center justify-center gap-2 w-full"><span class="mr-2">←</span> Return Home</button>
                     <div class="text-[10px] font-bold text-slate-400 dark:text-nude-accent uppercase tracking-[0.3em] mb-4">${a.category} // INTEL_REPORT</div>
                     <h1 class="font-display text-7xl lg:text-10xl tracking-tighter mb-12 leading-none">${a.title}</h1>
                     <div class="flex justify-center gap-12 text-[9px] font-black uppercase tracking-widest opacity-40"><span>Fidelity: 100% Verified</span><span>Node: FSLBD-PK HQ</span></div>
@@ -510,7 +691,7 @@
             const isDark = html.classList.contains('dark');
             document.getElementById('sun-icon').classList.toggle('hidden', !isDark);
             document.getElementById('moon-icon').classList.toggle('hidden', isDark);
-            if(cloud) cloud.material.color.setHex(isDark ? 0xc29a7c : 0x3b82f6);
+            update3DColor();
         }
 
         window.onscroll = () => {
