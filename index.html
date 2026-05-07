@@ -1002,7 +1002,33 @@
             else if(a.category === 'Future') set3DMode('quantum');
             else set3DMode('particles');
 
+            // --- NEW: RELATED ARTICLES LOGIC ---
+            // 1. Filter out the current article and the terms/system pages
+            const otherArticles = dossiers.filter(x => x.id !== id && x.id !== 'terms');
+            
+            // 2. Randomize the array and pick the top 2 for a clean grid layout
+            const shuffled = otherArticles.sort(() => 0.5 - Math.random());
+            const related = shuffled.slice(0, 2);
+
+            // 3. Generate HTML for the related cards
+            const relatedHTML = `
+                <div class="mt-32 border-t border-black/5 dark:border-white/5 pt-16">
+                    <h3 class="font-sans text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 dark:text-nude-dim mb-8 text-left">Explore Archive Network</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                        ${related.map(rel => `
+                            <div onclick="openArticle('${rel.id}')" class="bento-item group p-8 rounded-[2rem] bg-black/5 dark:bg-white/5 border border-transparent hover:bg-white dark:hover:bg-nude-card hover:border-sky-400 dark:hover:border-nude-accent cursor-pointer transition-all">
+                                <div class="text-[9px] font-black uppercase tracking-[0.2em] text-sky-500 dark:text-nude-accent mb-3">${rel.category}</div>
+                                <h4 class="text-lg font-bold mb-3 group-hover:text-sky-600 dark:group-hover:text-nude-accent transition-colors leading-snug">${rel.title}</h4>
+                                <p class="text-slate-500 dark:text-nude-dim text-xs italic opacity-80">${rel.desc}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            // -----------------------------------
+
             const payload = document.getElementById('payload');
+            // Insert the relatedHTML variable into the payload just above the Return button
             payload.innerHTML = `
                 <header class="mb-24 text-center border-b border-black/5 dark:border-white/5 pb-16">
                     <button onclick="showHome()" class="text-slate-400 dark:text-nude-dim text-[10px] font-bold uppercase tracking-widest mb-16 hover:text-sky-500 dark:hover:text-nude-accent transition-colors">← Return Home</button>
@@ -1011,7 +1037,10 @@
                     <div class="flex justify-center gap-12 text-[9px] font-black uppercase tracking-widest opacity-40"><span>Fidelity: 100% Verified</span><span>Node: FSLBD-PK HQ</span></div>
                 </header>
                 <div class="reader-body">${a.content}</div>
-                <div class="mt-40 pt-20 border-t border-black/5 dark:border-white/5 text-center">
+                
+                ${relatedHTML}
+
+                <div class="mt-24 pt-20 border-t border-black/5 dark:border-white/5 text-center">
                     <button onclick="showHome()" class="bg-slate-900 dark:bg-nude-accent text-white dark:text-nude-bg px-16 py-6 rounded-full font-bold uppercase text-[10px] tracking-[0.3em] shadow-2xl hover:scale-105 transition-transform">End Dossier / Return</button>
                 </div>
             `;
@@ -1022,7 +1051,6 @@
             // Re-initialize charts for the new view
             setTimeout(initCharts, 150);
         }
-
         function showHome() {
             set3DMode('particles');
             document.getElementById('home').classList.remove('hidden');
