@@ -793,26 +793,44 @@
                     <p>We believe that the convergence of carbon and silicon should not be hidden behind proprietary black boxes. By curating this elite digital archive, we champion <strong>Open Science</strong>, algorithmic transparency, and responsible biosecurity. We are not just observing the code of life being rewritten; we are ensuring the drafting process remains visible to the global community.</p>
                 `
             },
-            {
+             {
                 id: 'contact',
                 title: "Establish Secure Connection",
                 category: "System",
                 desc: "Communication protocols and collaboration channels.",
                 content: `
                     <h2>Communication Protocols</h2>
-                    <p>For inquiries regarding research collaboration, ethical oversight protocols, data access permissions, or system integration, please initiate a connection via our primary communication vector.</p>
+                    <p>For inquiries regarding research collaboration, ethical oversight protocols, data access permissions, or system integration, please utilize the secure transmission channels below.</p>
                     
-                    <div class="chart-box mt-12 mb-16">
-                        <span class="chart-title">Direct Link Established</span>
-                        <ul class="mt-8 space-y-4 font-mono text-sm opacity-80">
-                            <li><strong>> Primary Email Node :</strong> <a href="mailto:ikramalishba991@gmail.com" class="text-sky-500 dark:text-nude-accent hover:underline">ikramalishba991@gmail.com</a></li>
-                            <li><strong>> Physical Location  :</strong> FSLBD-PK HQ, Punjab, Pakistan</li>
-                            <li><strong>> Network Status     :</strong> Online / Accepting encrypted comms</li>
+                    <div class="mt-12 mb-16 p-8 md:p-12 rounded-[2rem] bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">
+                        <h3 class="font-sans text-[10px] font-black uppercase tracking-[0.3em] text-sky-500 dark:text-nude-accent mb-6 mt-0">Direct Link Established</h3>
+                        <ul class="space-y-6 font-mono text-sm opacity-90 list-none pl-0">
+                            <li class="flex items-center gap-4"><span class="text-sky-500 dark:text-nude-accent">></span> <strong>Primary Email Node:</strong> <a href="mailto:ikramalishba991@gmail.com" class="hover:text-sky-500 dark:hover:text-nude-accent transition-colors">ikramalishba991@gmail.com</a></li>
+                            <li class="flex items-center gap-4"><span class="text-sky-500 dark:text-nude-accent">></span> <strong>Physical Location:</strong> FSLBD-PK HQ, Punjab, Pakistan</li>
+                            <li class="flex items-center gap-4"><span class="text-sky-500 dark:text-nude-accent">></span> <strong>Network Status:</strong> Online / Accepting encrypted comms</li>
                         </ul>
                     </div>
 
-                    <h3>Collaboration Parameters</h3>
-                    <p>We are actively seeking dialogue with developers of Genomic Foundation Models, bioethicists, and engineers working within the neuromorphic hardware space. When initiating contact, please specify your research domain to ensure rapid routing to the appropriate analytical node.</p>
+                    <h2>Secure Transmission Form</h2>
+                    <p>Fill out the parameters below to initiate a direct data transfer to our headquarters. All transmissions are locally encrypted.</p>
+                    
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-8 space-y-8 bg-black/5 dark:bg-white/5 p-8 md:p-12 rounded-[2rem] border border-black/10 dark:border-white/10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="flex flex-col gap-3">
+                                <label class="font-sans text-[10px] font-black uppercase tracking-[0.2em] opacity-60">Operator ID / Name</label>
+                                <input type="text" required name="name" class="bg-white/50 dark:bg-nude-card border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:focus:ring-nude-accent text-sm font-mono transition-all w-full" placeholder="Enter your designation...">
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label class="font-sans text-[10px] font-black uppercase tracking-[0.2em] opacity-60">Return Comm-Link / Email</label>
+                                <input type="email" required name="email" class="bg-white/50 dark:bg-nude-card border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:focus:ring-nude-accent text-sm font-mono transition-all w-full" placeholder="Enter email address...">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <label class="font-sans text-[10px] font-black uppercase tracking-[0.2em] opacity-60">Encrypted Payload / Message</label>
+                            <textarea rows="5" required name="message" class="bg-white/50 dark:bg-nude-card border border-slate-200 dark:border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:focus:ring-nude-accent text-sm font-mono transition-all w-full resize-none" placeholder="Detail your inquiry here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-slate-900 dark:bg-nude-accent text-white dark:text-nude-bg py-5 rounded-xl font-bold uppercase text-[10px] tracking-[0.4em] hover:scale-[1.02] transition-transform shadow-xl hover:shadow-2xl">Transmit Data</button>
+                    </form>
                 `
             },
             {
@@ -1081,7 +1099,9 @@
             payload.innerHTML = `
                 <header class="mb-24 text-center border-b border-black/5 dark:border-white/5 pb-16">
                     <button onclick="showHome()" class="text-slate-400 dark:text-nude-dim text-[10px] font-bold uppercase tracking-widest mb-16 hover:text-sky-500 dark:hover:text-nude-accent transition-colors">← Return Home</button>
-                    <div class="text-[10px] font-bold text-sky-500 dark:text-nude-accent uppercase tracking-[0.3em] mb-4">${a.category} // INTEL_REPORT</div>
+                    <div class="text-[10px] font-bold text-sky-500 dark:text-nude-accent uppercase tracking-[0.3em] mb-4">
+                    ${a.category} // ${a.category === 'System' ? 'OPERATIONAL_DATA' : 'INTEL_REPORT'}
+                    </div>
                     <h1 class="font-display text-5xl md:text-7xl lg:text-8xl tracking-tighter mb-12 leading-none">${a.title}</h1>
                     <div class="flex justify-center gap-12 text-[9px] font-black uppercase tracking-widest opacity-40"><span>Fidelity: 100% Verified</span><span>Node: FSLBD-PK HQ</span></div>
                 </header>
