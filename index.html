@@ -145,17 +145,16 @@
                     <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_15px_#10b981]"></div>
                     <a href="mailto:ikramalishba991@gmail.com" class="text-xs font-black uppercase tracking-[0.4em]">ikramalishba991@gmail.com</a>
                 </div>
-            </div>
             <div class="grid grid-cols-2 gap-24 text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 dark:text-nude-dim">
                 <div class="flex flex-col gap-10">
                     <span class="text-slate-900 dark:text-nude-text underline underline-offset-[12px] decoration-sky-500 dark:decoration-nude-accent">Information</span>
+                    <button onclick="openArticle('about')" class="text-left hover:text-sky-500 dark:hover:text-nude-accent transition-colors">About_Node</button>
                     <button onclick="openArticle('terms')" class="text-left hover:text-sky-500 dark:hover:text-nude-accent transition-colors">Protocol_Terms</button>
-                    <a href="#" class="hover:text-sky-500 dark:hover:text-nude-accent transition-colors">Ethics_Board</a>
                 </div>
                 <div class="flex flex-col gap-10">
                     <span class="text-slate-900 dark:text-nude-text underline underline-offset-[12px] decoration-sky-500 dark:decoration-nude-accent">Network</span>
-                    <span class="opacity-40">FSLBD-PK_NODE</span>
-                    <a href="#" class="hover:text-sky-500 dark:hover:text-nude-accent transition-colors">LinkedIn_Dossier</a>
+                    <button onclick="openArticle('contact')" class="text-left hover:text-sky-500 dark:hover:text-nude-accent transition-colors">Contact_Comms</button>
+                    <a href="mailto:ikramalishba991@gmail.com" class="hover:text-sky-500 dark:hover:text-nude-accent transition-colors">Direct_Mail</a>
                 </div>
             </div>
         </div>
@@ -779,13 +778,63 @@
                 `
             },
             {
-                id: 'terms',
-                title: "Terms and Protocols",
+                id: 'about',
+                title: "About the Bio-Agentic Hub",
                 category: "System",
-                desc: "Ethical and legal guidelines for accessing this archive.",
+                desc: "The mission, node architecture, and strategic intent of our archive.",
                 content: `
-                    <h3>Strategic Intent</h3>
-                    <p>This Hub is a professional archive for research. Access implies acceptance of ethical gating protocols. Contributors are not liable for autonomous lab executions without human verification. Node: Faisalabad-PK HQ.</p>
+                    <h2>The Faisalabad Headquarters Node</h2>
+                    <p>BIO-AGENTIC was established as a premier digital archive to document the critical transition from static bioinformatics to autonomous biological agency. Operating out of the FSLBD-PK Node in Punjab, Pakistan, our mission is to synthesize the breathtaking 2026 breakthroughs in biotechnology into accessible, transparent, and high-fidelity intelligence reports.</p>
+                    
+                    <h3>Our Core Mission</h3>
+                    <p>As AI agents move from tools to autonomous collaborators, the scientific community faces profound paradigm shifts. We exist to chronicle this "Decade of Discovery," providing researchers, ethicists, and technologists with a reliable foundation of knowledge regarding generative biologics, neuromorphic computing, and organ-on-a-chip physical layers.</p>
+                    
+                    <h3>The Bio-Digital Philosophy</h3>
+                    <p>We believe that the convergence of carbon and silicon should not be hidden behind proprietary black boxes. By curating this elite digital archive, we champion <strong>Open Science</strong>, algorithmic transparency, and responsible biosecurity. We are not just observing the code of life being rewritten; we are ensuring the drafting process remains visible to the global community.</p>
+                `
+            },
+            {
+                id: 'contact',
+                title: "Establish Secure Connection",
+                category: "System",
+                desc: "Communication protocols and collaboration channels.",
+                content: `
+                    <h2>Communication Protocols</h2>
+                    <p>For inquiries regarding research collaboration, ethical oversight protocols, data access permissions, or system integration, please initiate a connection via our primary communication vector.</p>
+                    
+                    <div class="chart-box mt-12 mb-16">
+                        <span class="chart-title">Direct Link Established</span>
+                        <ul class="mt-8 space-y-4 font-mono text-sm opacity-80">
+                            <li><strong>> Primary Email Node :</strong> <a href="mailto:ikramalishba991@gmail.com" class="text-sky-500 dark:text-nude-accent hover:underline">ikramalishba991@gmail.com</a></li>
+                            <li><strong>> Physical Location  :</strong> FSLBD-PK HQ, Punjab, Pakistan</li>
+                            <li><strong>> Network Status     :</strong> Online / Accepting encrypted comms</li>
+                        </ul>
+                    </div>
+
+                    <h3>Collaboration Parameters</h3>
+                    <p>We are actively seeking dialogue with developers of Genomic Foundation Models, bioethicists, and engineers working within the neuromorphic hardware space. When initiating contact, please specify your research domain to ensure rapid routing to the appropriate analytical node.</p>
+                `
+            },
+            {
+                id: 'terms',
+                title: "Terms and Conditions",
+                category: "System",
+                desc: "Ethical, legal, and biosecurity guidelines for network access.",
+                content: `
+                    <h2>Operational Parameters & Legal Framework</h2>
+                    <p>By accessing the BIO-AGENTIC network and interacting with our digital archives, you agree to the following operational terms and biosecurity protocols. These guidelines are actively enforced to align with the 2026 Global Bio-Digital Treaties.</p>
+
+                    <h3>1. Data Sovereignty and Fair Use</h3>
+                    <p>The intelligence reports and synthesized research provided on this hub are intended for educational, research, and transparency purposes. While the architecture promotes Open Science, bulk extraction of analytical frameworks for the purpose of proprietary monopolization is strictly prohibited. Users must properly cite the BIO-AGENTIC FSLBD-PK Node when referencing these syntheses.</p>
+
+                    <h3>2. Biosecurity and Dual-Use Restrictions</h3>
+                    <p>This archive discusses concepts of Generative Biologics, Functional Protein Design, and Pathogen Modeling. Under the <strong>Biosecurity Paradox framework</strong>, users agree not to utilize any conceptual data found herein to bypass hardware gating mechanisms, engage in adversarial fine-tuning of biological models, or attempt the synthesis of restricted biological agents (BDL-4 and BDL-5 materials).</p>
+
+                    <h3>3. Autonomous Agency Disclaimer</h3>
+                    <p>The concepts detailed in this archive involve autonomous "Agentic AI" workflows. BIO-AGENTIC and its maintainers are not liable for any physical laboratory executions, robotic synthesis errors, or diagnostic misinterpretations made by independent AI agents operated by the user. Human-in-the-loop (HITL) verification remains the mandatory legal standard for all in-silico and wet-lab operations.</p>
+
+                    <h3>4. Privacy and Telemetry</h3>
+                    <p>For the purpose of maintaining network integrity and preventing adversarial data scraping, basic connection telemetry (such as node access frequencies) may be logged. We do not synthesize user data with Biological Digital Twins without explicit, cryptographic consent.</p>
                 `
             }
         ];
@@ -1004,7 +1053,7 @@
 
             // --- NEW: RELATED ARTICLES LOGIC ---
             // 1. Filter out the current article and the terms/system pages
-            const otherArticles = dossiers.filter(x => x.id !== id && x.id !== 'terms');
+            const otherArticles = dossiers.filter(x => x.id !== id && x.category !== 'System');
             
             // 2. Randomize the array and pick the top 2 for a clean grid layout
             const shuffled = otherArticles.sort(() => 0.5 - Math.random());
